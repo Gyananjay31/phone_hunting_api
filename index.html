@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Phone Hunting API</title>
+</head>
+<body class="text-[#A6ADBA]">
+
+    <div class="bg-slate-800 h-[700px]" >
+        <nav class="flex justify-between py-6 px-20 bg-[#0d6efd0d] text-[#A6ADBA]">
+            <h2 class="text-2xl font-bold">Hot Gadgets</h2>
+            <button class="text-white bg-violet-600 hover:bg-violet-800 px-4 py-3 rounded-xl font-bold uppercase text-[14px] cursor-pointer transition duration-300 ease-in-out">Sign Up</button>
+        </nav>
+
+        <header>
+            <section class="flex flex-col items-center justify-center py-10">
+                <h1 class="font-bold text-6xl text-center h-txt px-5">Apple Iphone 13 Pro Max</h1>
+                <p class="text-center text-xl py-6 p-txt">There are many variations of passages of Lorem Ipsum available, but the majority <br>have suffered alteration in some form, by injected humou. </p>
+                <button class="text-white bg-violet-600 hover:bg-violet-800 px-4 py-3 rounded-xl font-bold uppercase text-[14px] cursor-pointer transition duration-300 ease-in-out">Buy Now</button>
+            </section>
+            <section>
+                <div class="grid grid-cols-3 lg:flex lg:justify-center items-end relative">
+                    <img src="images/pngwing 2.png" alt="">
+                    <img src="images/pngwing 1.png" alt="">
+                    <img src="images/pngwing 2.png" alt="">
+                </div>
+            </section>
+        </header>
+    </div>
+
+    <div class="h-full bg-slate-900">
+        <main class="main pt-96 pb-20 flex justify-center items-center flex-col gap-15">
+            <h2 class="font-bold text-3xl sm:text-4xl">Search Your Phone</h2>
+            <section>
+                <form action="" class="flex justify-center items-center gap-2">
+                    <input type="text" name="" id="input" placeholder="e.g. oppo, samsung, iphone" class="border-1 border-gray-600 w-[18rem] h-13 px-4 py-3 rounded-xl focus:outline-1 focus:outline-gray-500 focus:outline-offset-3">
+                    <button class="btn text-white bg-violet-600 hover:bg-violet-800 px-4 py-3 h-13   rounded-xl font-bold uppercase text-[14px] cursor-pointer transition duration-300 ease-in-out">Search</button>
+                </form>
+            </section>
+            <section class="output">
+                <div class="loading">
+                    <h1>Loading...</h1>    
+                    <span class="loader"></span>    
+                </div>
+            </section>
+
+             
+             <dialog id="my_modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div id="imgContainer"></div>
+                    <h3 id="detailsPhoneName"></h3>
+                    <h3 id="detailsBrand"></h3>
+                    <p id="detailsSpec"></p>
+                    <p id="releaseDate"></p>
+                </div>
+            </dialog>
+
+        </main>
+
+    </div>
+
+    <footer class="py-30 text-center bg-slate-800 text-black flex flex-col gap-3">
+        <i class="fa-solid fa-hashtag font-bold text-5xl rotate-45"></i>
+        <h2 class="font-bold text-xl">Hot Gadgets BD <br>Providing reliable tech items since 1992</h2>
+        <p class="text-xl">Copyright © 2023 - All right reserved</p>
+        <div class="social flex gap-4 justify-center items-center text-2xl mt-10">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
